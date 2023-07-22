@@ -17,7 +17,8 @@ export const StopWatch= ()=>{
         return ()=> clearInterval(interval)
     }, [timerON])
     return (
-        <div className='text-center'>
+        <div className='text-center flex justify-center items-center h-[100vh] max-w-[1040px] m-auto'>
+          <div>
             <p className='p-5 font-extrabold text-2xl'>Hello.Timer</p>
             <div className='p-5 text-3xl font-mono'>
                 <span>{('0' + Math.floor((time / 600000) % 60)).slice(-2)}:</span>
@@ -39,6 +40,7 @@ export const StopWatch= ()=>{
                     <button className='mx-1 btn' onClick={()=>setTime(0)}>Reset</button>
                 )}
             </div>
+          </div>
         </div>
     )
 }
