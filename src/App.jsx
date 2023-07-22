@@ -17,7 +17,7 @@ export const StopWatch= ()=>{
         return ()=> clearInterval(interval)
     }, [timerON])
     return (
-        <div className='text-center flex justify-center items-center h-[100vh] max-w-[1040px] m-auto'>
+        <div className='text-center flex justify-center items-center min-h-[100vh] max-w-[1040px] m-auto'>
           <div>
             <p className='p-5 font-extrabold text-2xl'>Hello.Timer</p>
             <div className='p-5 text-3xl font-mono'>
